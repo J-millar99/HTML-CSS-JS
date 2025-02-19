@@ -1,0 +1,45 @@
+/* 너비 조정과 중앙 정렬 */
+div {
+    width: 300px;
+    margin:auto;
+}
+
+/* div 요소를 나란히 정렬하기 */
+/* mycontainer 크기를 지정하고 그 안의 div는 33%를 가짐 */
+.mycontainer {
+    width: 100%;
+    overflow:auto;
+}
+
+.mycontainer div {
+    width:33%;
+    float:left;
+}
+
+/* div를 display를 block이 아닌 inline-block으로 두면, 나란히 표시됩니다. */
+div {
+    width: 30%;
+    display: inline-block;
+}
+
+/* CSS flex 레이아웃 모듈은 float이나 위치 지정을 사용하지 않고도
+    유연한 반응형 레이아웃 구조를 더 쉽게 디자인할 수 있도록 도입.
+    div요소에 flex 컨테이너 상태를 부여하여 사용
+*/
+.mycontainer {
+    display: flex;
+}
+
+.mycontainer > div {
+    width: 33%;
+}
+
+/* CSS 그리드 레이아웃 모듈은 행과 열로 구성된 그리드 기반 레이아웃 시스템을 제공하므로 
+    float 및 위치 지정을 사용하지 않고도 웹 페이지를 쉽게 디자인할 수 있습니다.
+    flex와 거의 비슷해 보이지만, 두 개 이상의 행을 정의하고 각 행을 개별적으로 배치할 수 있는 기능이 있습니다.
+    div요소에 grid 컨테이너 상태를 부여하여 사용
+*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
