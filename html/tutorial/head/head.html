@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        <head>는 메타데이터를 담는 컨테이너로, <html>과 <body> 사이에 배치됩니다.
+        HTML 메타데이터는 HTML 문서에 대한 데이터입니다. 메타데이터는 페이지에 표시되지 않습니다.
+        메타데이터는 문서 제목, 문자 집합, 스타일, 스크립트 및 기타 메타 정보를 정의합니다.
+    -->
+    <title>Head Page</title>
+    <!-- title
+        브라우저 툴바의 제목을 정의합니다.
+        즐겨찾기에 추가되면 페이지의 제목을 제공합니다.
+        검색 엔진 결과에 페이지의 제목을 표시합니다.
+    -->
+    <style>
+        body {background-color: powderblue;}
+        h1 {color: red;}
+        p {color: blue;}
+    </style>
+    <!-- style
+        단일 HTML 페이지에 대한 스타일 정보를 정의하는 데 사용됩니다.
+    -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link
+        현재 문서와 외부 리소스 간의 관계를 정의합니다.
+        외부 스타일 시트에 연결하는 데 가장 자주 사용됩니다.
+    -->
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello JavaScript!"
+        }
+    </script>
+    <!-- script
+        클라이언트 측 JavaScript를 정의하는 데 사용됩니다.
+        다음 JavaScript는 id="demo"인 HTML 요소에 "Hello javaScript!"를 씁니다
+    -->
+    <base href="https://www.w3schools.com/" target="_blank">
+    <!-- base
+        페이지의 모든 상대 URL에 대한 기본 URL및/또는 대상을 지정합니다.
+        <base>에는 href과 target 속성이 둘 다 있어야 합니다.
+        <base> 문서에는 단 하나의 요소만 포함될 수 있습니다.
+    -->
+</head>
+<body>
+    <p>사용되는 문자 집합을 정의: &lt;meta charset="UTF-8"&gt;</p>
+    <p>검색 엔진을 위한 키워드 정의: &lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;</p>
+    <p>웹 페이지에 대한 설명을 정의: &lt;meta name="description" content="Free Web tutorials"&gt;</p>
+    <p>페이지의 작성자를 정의: &lt;meta name="author" content="John Doe"&gt;</p>
+    <p>30초마다 문서 새로 ​​고침: &lt;meta http-equiv="refresh" content="30"&gt;</p>
+    <p>모든 기기에서 웹사이트가 잘 보이도록 뷰포트 설정: &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+    <img src="images/stickman.gif" width="24" height="39" alt="Stickman">
+    <a href="tags.tag_bas.asp">HTML base Tag</a>
+</body>
+</html>
