@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Table Header Page</title>
+</head>
+<body>
+    <table>
+        <!-- 첫 번째 행이 헤더가 아닌 첫 번째 열이 헤더가 됨-->
+        <tr>
+          <th>Firstname</th>
+          <td>Jill</td>
+          <td>Eve</td>
+        </tr>
+        <tr>
+          <th>Lastname</th>
+          <td>Smith</td>
+          <td>Jackson</td>
+        </tr>
+        <tr>
+          <th>Age</th>
+          <td>94</td>
+          <td>50</td>
+        </tr>
+      </table>
+      <!-- Name 헤더가 두 개의 column을 가짐 -->
+      <table>
+        <caption>이름과 나이</caption>
+        <tr>
+          <th colspan="2">Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+      </table>
+</body>
+</html>

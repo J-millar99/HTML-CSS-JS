@@ -1,0 +1,114 @@
+/* 테이블 (이중 테두리) */
+table, th, td {
+    border: 1px solid black;
+}
+
+/* 테이블 (단일 테두리) */
+/* table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+} */
+
+/* 셀의 배경색을 설정하고 테두리를 보이지 않게 */
+/* table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    background-color: #96D4D4;
+} */
+
+/* 둥근 테이블 (이중 테두리) */
+/* table, th, td {
+    border: 1px solid black;
+    border-radius: 10px;
+*/
+
+/* 둥근 테이블 (단일 테두리) */
+/* th, td {
+    border: 1px solid black;
+    border-radius: 10px;
+} */
+
+/* 점선 테이블 (table 태그를 포함시켜도 이중 테두리가 되지 않음) */
+/* th, td {
+    border-style: dotted;
+} */
+/*
+    border-style 목록
+    dotted     
+    dashed     
+    solid     
+    double     
+    groove     
+    ridge     
+    inset     
+    outset     
+    none     
+    hidden
+*/
+
+/* 테두리 색상 지정 */
+/* th, td {
+    border-color: #96D4D4;
+} */
+
+/* 테이블 헤더 정렬 */
+/* th {
+    text-align: left;
+} */
+
+/* 테이블 - 셀 패딩 */
+/* th, td {
+    padding: 15px;
+*/
+/* 콘텐츠 위 쪽에만 패딩을 추가하려면 padding-top */
+
+/* 테이블 - 셀 패딩 (각기 다른 패딩) */
+/* th, td {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+*/
+
+/* 테이블 - 셀 간격 */
+/*  table {
+    border-spacing: 30px;
+} */
+/* 셀 간격은 2px(default)*/
+
+/* 테이블 - 행 줄무늬 */
+/* tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+/* 짝수 번째에 색을 적용 */
+
+/* 테이블 - 열 줄무늬 */
+/* td:nth-child(even), th:nth-child(even) {
+    background-color: #D6EEEE;
+} */
+/* 짝수 열 셀과 짝수 열 헤더를 색칠 */
+
+/* 수직 및 수평 줄무늬 결합 */
+/* tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+}
+
+tr:nth-child(even), td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+} */
+/* 짝수 행과 짝수 열(헤더, 셀)이 같은 색으로 칠해지고 겹치는 부분은 진해짐 */
+
+/* 수평 분할선 */
+/* tr {
+    border-bottom: 1px solid #ddd;
+} */
+/* 각 행의 아래쪽에만 테두리를 지정. */
+/* 단, 테두리가 우선 적용되어 테두리가 그려져 있지 않아야 함 */
+
+/* 호버블 테이블 */
+/* tr:hover {
+    background-color:  #D6EEEE;
+} */
