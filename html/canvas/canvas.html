@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Page</title>
+</head>
+<body>
+<p>빈 캔버스 예시</p>
+    <canvas id="myCanvas" width="400" height="200" style="border: 1px solid #000000"></canvas>
+
+    <h2>JavaScript를 사용하여 그림을 그리기</h2>
+
+<p>선 그리기</p>
+<xmp>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0, 0);
+        ctx.lineTo(400, 200);
+        ctx.stroke();
+    </script>
+</xmp>
+
+<p>원 그리기</p>
+<xmp>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(190, 100, 80, 0, 2 * Math.PI);
+        ctx.stroke();
+    </script>
+</xmp>
+
+<p>텍스트 그리기</p>
+<xmp>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillText("Hello World", 10, 50);
+    </script>
+</xmp>
+
+<p>스트로크 텍스트</p>
+<xmp>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("Hello World", 10, 50);
+    </script>
+</xmp>
+
+<p>선형 그래디언트 그리기</p>
+<xmp>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        
+        // Create gradient
+        var grd = ctx.createLinearGradient(0, 0, 200, 0);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "white");
+        
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(10, 10, 150, 80);
+    </script>
+</xmp>
+
+<p>원형 그래디언트 그리기</p>
+<xmp>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        
+        // Create gradient
+        var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "white");
+            
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(10, 10, 150, 80);
+    </script>
+</xmp>
+
+<h4>이미지 그리기</h4>
+<p>Image to use:</p>
+<img id="dog" src="image.png" alt="Dog Image" width="330" height="360">
+
+<p>Canvas to fill:</p>
+<canvas id="dogCanvas" width="400" height="400" style="border: 1px solid #d3d3d3;">
+    Your browser does not supoort the HTML canvas tag.</canvas>
+
+<p><button onclick="dogCanvas()">Try it</button></p>
+<script>
+function dogCanvas() {
+        var c = document.getElementById("dogCanvas");
+        var ctx = c.getContext("2d");
+        var img = document.getElementById("dog");
+        ctx.drawImage(img, 10, 10);
+    }
+</script>
+
+</body>
+</html>
