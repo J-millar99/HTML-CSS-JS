@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Element Page</title>
+</head>
+<body>
+    <h2>input 요소</h2>
+    <p>가장 많이 사용되며, type 속성에 따라 input 요소를 여러 가지 방법으로 표시할 수 있습니다.</p>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname">
+
+    <h2>select 요소</h2>
+    <p>select는 드롭다운 목록을 정의합니다.</p>
+    <pre>
+        size는 보여지는 선택지의 개수이며,
+        multiple은 다중 선택을 허용하는 것입니다.
+        다중 선택은 컨트롤이나 커맨드 키를 사용해야 합니다.
+    </pre>
+    <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars" size="4" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+            <option value="example" selected>Example</option>
+        </select>
+
+    <h2>textarea 요소</h2>
+    <p>textarea는 다중 줄 입력 필드를 정의합니다.</p>
+    <textarea name="message" rows="10" cols="30">
+        The cat was playing in the garden.
+    </textarea>
+
+    <p>css를 사용하여 텍스트 영역의 크기를 정의할 수도 있습니다.</p>
+    <textarea name="message" style="width:200px; height:400px;">
+        The cat was playing in the garden.
+        </textarea>
+
+    <h2>button 요소</h2>
+    <p>button은 클릭 가능한 버튼을 정의합니다.</p>
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+    <h2>fieldset, legend 요소</h2>
+    <p>
+        fieldset는 양식에서 관련 데이터를 그룹화하는 데 사용됩니다. <br>
+        legend는 fieldset에 대한 캡션을 정의합니다.
+    </p>
+    <form action="https://www.w3schools.com/action_page.php">
+        <fieldset>
+          <legend>Personalia:</legend>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+
+    <h2>datalist 요소</h2>
+    <p>
+        datalist는 미리 정의된 옵션 목록을 지정합니다. <br>
+        사용자는 데이터를 입력할 때 미리 정의된 옵션의 드롭다운 목록을 보게 됩니다. <br>
+        input 요소의 list 속성은 datalist요소의 id 속성을 참조해야 합니다.
+    </p>
+
+    <form action="https://www.w3schools.com/action_page.php">
+        <input list="browsers">
+        <datalist id="browsers">
+          <option value="Edge">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+    </form>
+
+    <h2>output 요소</h2>
+    <p>output은 계산의 결과를 나타냅니다.</p>
+    <form action="https://www.w3schools.com/action_page.php"
+    oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range" id="a" name="a" value="50">
+    100 +
+    <input type="number" id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+    </form>
+</body>
+</html>
