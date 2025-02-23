@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Attribute Page</title>
+</head>
+<body>
+    <h2>동작 속성</h2>
+    <p>
+        action속성은 양식이 제출될 때 수행할 작업을 정의합니다. <br>
+        일반적으로, 사용자가 제출 버튼을 클릭하면 양식 데이터가 서버의 파일에 전송됩니다. <br>
+        아래 예에서, 폼 데이터는 "action_page.php"라는 파일로 전송됩니다. 이 파일에는 폼 데이터를 처리하는 서버 측 스크립트가 들어 있습니다.
+    </p>
+
+    <p>제출 시, action_page.php로 양식 데이터를 보냅니다.</p>
+    &lt;form action="https://www.w3schools.com/action_page.php">&gt;
+
+    <h2>대상 속성</h2>
+    <p> 
+        target 속성은 양식을 제출한 후 수신된 응답을 표시할 위치를 지정합니다. <br>
+        다음 값 중 하나를 가질 수 있습니다.
+    </p>
+
+    <pre>
+        _blank      :	The response is displayed in a new window or tab
+        _self       :	The response is displayed in the current window
+        _parent     :	The response is displayed in the parent frame
+        _top        :	The response is displayed in the full body of the window
+        framename   :	The response is displayed in a named iframe
+        (기본값은 _self이며, 현재 창에서 응답이 열린다는 것을 의미합니다.)
+    </pre>
+
+    <h2>메서드 속성</h2>
+    <p>
+        method속성은 양식 데이터를 제출할 때 사용할 HTTP 메서드를 지정합니다. <br>
+        폼 데이터는 URL 변수( method="get") 또는 HTTP 게시 트랜잭션( method="post")으로 전송할 수 있습니다. <br>
+        양식 데이터를 제출할 때의 기본 HTTP 메서드는 GET입니다.
+    </p>
+
+    <xmp>
+        양식 데이터를 제출할 때 GET 메서드를 사용합니다.
+        <form action="https://www.w3schools.com/action_page.php" method="get">
+        양식 데이터를 제출할 때 POST 메서드를 사용합니다.
+        <form action="https://www.w3schools.com/action_page.php" method="post">
+    </xmp>
+
+    <h2>자동완성 속성</h2>
+    <p>
+        autocomplete 속성은 양식에서 자동완성을 켜야 할지 꺼야 할지를 지정합니다. <br>
+        자동완성이 켜져 있으면 브라우저는 사용자가 이전에 입력한 값을 기반으로 자동으로 값을 완성합니다. <br>
+        &lt;form action="https://www.w3schools.com/action_page.php" autocomplete="on"&gt;
+    </p>
+
+    <h2>Novalidate 속성</h2>
+    <p>
+        novalidate 속성은 부울 속성입니다. <br>
+        이 속성이 존재하는 경우, 제출 시 양식 데이터(입력)의 유효성을 검사하지 않아야 함을 지정합니다. <br>
+        &lt;form action="https://www.w3schools.com/action_page.php" novalidate&gt;
+    </p>    
+</body>
+</html>
