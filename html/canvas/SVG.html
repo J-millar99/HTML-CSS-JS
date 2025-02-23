@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Page</title>
+</head>
+<body>
+    <h2>HTML SVG 그래픽</h2>
+    <p>확장 가능 벡터 그래픽이라는 뜻이며 확대/축소학나 크기를 조정해도 품질이 손상되지 않습니다.</p>
+
+    <h3> SVG란 무엇인가요? </h3>
+    <ul>
+        <li>SVG란 무엇인가요?</li>
+        <li>SVG는 확장 가능한 벡터 그래픽을 의미합니다.</li>
+        <li>SVG는 웹용 벡터 기반 그래픽을 정의하는 데 사용됩니다.</li>
+        <li>SVG는 XML 형식으로 그래픽을 정의합니다</li>
+        <li>SVG 파일의 각 요소와 속성은 애니메이션화될 수 있습니다.</li>
+        <li>SVG는 W3C 권장사항입니다</li>
+        <li>SVG는 CSS, DOM, XSL 및 JavaScript와 같은 다른 표준과 통합됩니다.</li>
+    </ul>
+
+<xmp>
+    HTML <svg>요소는 SVG 그래픽을 위한 컨테이너입니다.
+    SVG에는 경로, 사각형, 원, 다각형, 텍스트 등을 그리는 데 사용할 수 있는 여러 가지 방법이 있습니다.
+</xmp>
+    <p>원</p>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+
+    <p>사각형</p>
+    <svg width="400" height="120">
+        <rect x="10" y="10" width="200" height="100" stroke="red" stroke-width="6" fill="blue" />
+    </svg>
+
+    <p>둥근 모서리 사각형</p>
+    <svg width="400" height="180">
+        <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+        style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+    </svg>
+
+    <p>별</p>
+    <svg width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+        style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+    </svg>
+
+    <p>SVG 그래디언트 타원 및 텍스트</p>
+    <svg height="130" width="500">
+        <defs>
+          <linearGradient id="grad1">
+            <stop offset="0%" stop-color="yellow" />
+            <stop offset="100%" stop-color="red" />
+          </linearGradient>
+        </defs>
+        <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+        <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+        Sorry, your browser does not support inline SVG.
+    </svg>
+
+</body>
+</html>
