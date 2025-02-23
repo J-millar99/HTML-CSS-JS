@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entity Page</title>
+</head>
+<body>
+    <p>
+        일부 문자는 HTML에서 예약되어 있습니다. <br>
+        HTML 텍스트에서 보다 작음(<) 또는 보다 큼(>) 기호를 사용하면 브라우저가 이를 태그와 섞어서 사용할 수 있습니다. <br>
+        엔터티 이름이나 엔터티 번호를 사용하여 예약된 HTML 문자를 표시할 수 있습니다. <br>
+        엔티티 이름은 다음과 같습니다.
+    </p>
+    <xmp> 
+        < = &lt; less than 
+        > = &gt; greater than
+    </xmp>
+    <p> 따라서 entity의 이름 혹은 번호로 표시할 수 있습니다. </p>
+    <xmp>
+        &entity_name;
+        &#entity_number;
+    </xmp>
+
+    <p> 텍스트에 공백 10개를 쓰면 브라우저가 그중 9개를 제거합니다. 텍스트에 실제 공백을 추가하려면 다음 문자 엔터티를 사용할 수 있습니다. </p>
+    <xmp>
+        &nbsp;
+    </xmp>
+</body>
+</html>
