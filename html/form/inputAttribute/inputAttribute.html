@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Attribute Page</title>
+</head>
+<body>
+    <h3>값 속성</h3>
+    <p>입력의 value 속성은 입력 필드의 초기 값을 지정합니다.</p>
+    <xmp>
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe">
+</form>
+    </xmp>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe">
+    </form>
+
+    <h3>읽기 전용 속성</h3>
+    <p>input의 readonly 속성은 입력 필드가 읽기 전용임을 지정하여 수정할 수 없게 만듭니다.</p>
+    <xmp>
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John" readonly><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe">
+</form>
+    </xmp>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" readonly><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe">
+    </form>
+
+    <h3>비활성화된 속성</h3>
+    <p>input의 disabled 속성은 입력 필드를 비활성화함을 지정하여, 사용할 수 없고 클릭할 수 없습니다.</p>
+<xmp>
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John" disabled><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe">
+</form>
+</xmp>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" disabled><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe">
+    </form>
+
+
+    <h3>크기 속성 속성</h3>
+    <p>input의 size속성은 입력 필드의 표시 너비를 문자 단위로 지정합니다.</p>
+<xmp>
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" size="50"><br>
+    <label for="pin">PIN:</label><br>
+    <input type="text" id="pin" name="pin" size="4">
+</form>
+</xmp>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="50"><br>
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" size="4">
+    </form>
+
+
+    <h3>maxlength 속성</h3>
+    <p>input의 maxlength속성은 입력 필드에 허용되는 최대 문자 수를 지정합니다.</p>
+<xmp>
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" size="50"><br>
+    <label for="pin">PIN:</label><br>
+    <input type="text" id="pin" name="pin" maxlength="4" size="4">
+</form>
+</xmp>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="50"><br>
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" maxlength="4" size="4">
+    </form>
+
+
+    <h3>최소 및 최대 속성</h3>
+    <p>input의 min및 max속성은 입력 필드의 최소값과 최대값을 지정합니다.</p>
+<xmp>
+<form>
+    <label for="datemax">Enter a date before 1980-01-01:</label>
+    <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+      
+    <label for="datemin">Enter a date after 2000-01-01:</label>
+    <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+      
+    <label for="quantity">Quantity (between 1 and 5):</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="5">
+</form>
+</xmp>
+    <form>
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+    
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+    
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+    </form>
+
+    
+    <h3>다중 속성</h3>
+    <p>input의 multiple 속성은 사용자가 입력 필드에 두 개 이상의 값을 입력할 수 있음을 지정합니다.</p>
+<xmp>
+<form>
+    <label for="files">Select files:</label>
+    <input type="file" id="files" name="files" multiple>
+</form>
+</xmp>
+    <form>
+        <label for="files">Select files:</label>
+        <input type="file" id="files" name="files" multiple>
+    </form>
+
+    <h3>패턴 속성</h3>
+    <p>input의 pattern 속성은 양식이 제출될 때 입력 필드의 값을 검사하는 정규 표현식을 지정합니다.</p>
+<xmp>
+<form>
+    <label for="country_code">Country code:</label>
+    <input type="text" id="country_code" name="country_code"
+    pattern="[A-Za-z]{3}" title="Three letter country code">
+</form>
+</xmp>
+    <form>
+        <label for="country_code">Country code:</label>
+        <input type="text" id="country_code" name="country_code"
+        pattern="[A-Za-z]{3}" title="Three letter country code">
+    </form>
+
+
+    <h3>플레이스홀더 속성</h3>
+    <p>input의 placeholder 속성은 입력 필드의 예상 값(샘플 값 또는 예상 형식에 대한 간단한 설명)을 설명하는 짧은 힌트를 지정합니다.</p>
+<xmp>
+<form>
+    <label for="phone">Enter a phone number:</label>
+    <input type="tel" id="phone" name="phone"
+    placeholder="123-45-678"
+    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+</form>
+</xmp>
+    <form>
+        <label for="phone">Enter a phone number:</label>
+        <input type="tel" id="phone" name="phone"
+        placeholder="123-45-678"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    </form>
+
+    <h3>필수 속성</h3>
+    <p>input의 required 속성은 양식을 제출하기 전에 입력 필드를 작성해야 함을 지정합니다.</p>
+<xmp>
+<form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+</form>
+</xmp>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    </form>
+
+    <h3>step 속성</h3>
+    <p>input의 step속성은 입력 필드의 유효한 숫자 간격을 지정합니다.</p>
+<xmp>
+<form>
+    <label for="points">Points:</label>
+    <input type="number" id="points" name="points" step="3">
+</form>
+</xmp>
+    <form>
+        <label for="points">Points:</label>
+        <input type="number" id="points" name="points" step="3">
+    </form>
+
+    <h3>자동 초점 속성</h3>
+    <p>input의 autofocus 속성은 페이지가 로드될 때 입력 필드가 자동으로 포커스를 받아야 함을 지정합니다. <br>
+    새로고침을 눌러보면 First name 입력으로 페이지가 포커스 됩니다.</p>
+<xmp>
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" autofocus><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname">
+</form>
+</xmp>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" autofocus><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+    </form>
+
+    <h3>높이 및 너비 속성</h3>
+    <p>input의 height및 width속성은 요소의 높이와 너비를 지정합니다.</p>
+<xmp>
+<form>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="image" src="image.png" alt="Submit" width="48" height="48">
+</form>
+</xmp>
+    <form>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="image" src="image.png" alt="Submit" width="48" height="48">
+    </form>
+
+    <h3>목록 속성</h3>
+    <p>input의 list요소가 input에, 미리 정의된 옵션이 포함된 datalist요소를 참조합니다.</p>
+<xmp>
+<form>
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+</form>
+</xmp>
+    <form>
+    <input list="browsers">
+        <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+        </datalist>
+    </form>
+
+    <h3>자동완성 속성</h3>
+    <p>input의 autocomplete속성은 양식이나 입력 필드에서 자동완성을 켜거나 끌지 여부를 지정합니다.</p>
+<xmp>
+<form action="https://www.w3schools.com/action_page.php" autocomplete="on">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" autocomplete="off"><br><br>
+    <input type="submit" value="Submit">
+</form>
+</xmp>
+    <form action="https://www.w3schools.com/action_page.php" autocomplete="on">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="off"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
